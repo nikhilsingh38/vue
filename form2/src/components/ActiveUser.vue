@@ -1,12 +1,23 @@
 <template>
   <section>
-    <h2>Nikhil Singh</h2>
-    <h3>26 Years</h3>
+    <h2>{{username}}</h2>
+    <h3>{{userage}} Years</h3>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+    props: {
+        username: {
+            type: String,
+            required: true
+        },
+        userage: {
+            type: String,
+            required: true
+        }
+    }
+};
 </script>
 
 <style>
